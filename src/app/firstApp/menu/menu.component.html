@@ -1,7 +1,8 @@
-<p>
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis in nemo,
-  nam obcaecati sapiente aspernatur quos incidunt quibusdam quisquam amet
-  consequatur necessitatibus delectus, iure vero fugiat mollitia illum
-  praesentium fugit.
-</p>
+<body>
+  <div class="navigation" [ngClass]="{'open': flag, 'close':!flag}">
+    <div class="menuToggle" (click)="menuToggle()">
+    </div>
+  </div>
+</body>
+
 <router-outlet></router-outlet>
