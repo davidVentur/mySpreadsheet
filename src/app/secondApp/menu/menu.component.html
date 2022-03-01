@@ -1,0 +1,22 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav mode="over" class="sideNav">
+    <mat-nav-list>
+      <a (click)="sidenav.toggle()" mat-list-item>
+        <mat-icon mat-list-icon>home</mat-icon>
+        <span routerLink="home">Home</span>
+      </a>
+      <a (click)="sidenav.toggle()" mat-list-item>
+        <mat-icon mat-list-icon>description</mat-icon>
+        <span routerLink="about">About</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar class="tool-bar">
+    <button mat-mini-fab class="hamburguer" (click)="sidenav.toggle()">
+      <mat-icon class="icon">menu</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <router-outlet></router-outlet>
+</mat-sidenav-container>

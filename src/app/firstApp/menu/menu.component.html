@@ -3,41 +3,41 @@
     <div class="menuToggle" (click)="menuToggle()"></div>
     <ul>
       <li class="list active" style="--clr: #f44336">
-        <a>
-          <span class="icon"><i class="ph-house-thin"></i></span>
+        <a routerLink="home">
+          <span class="icon"><i class="ph-house"></i></span>
           <span class="text">Home</span>
         </a>
       </li>
 
       <li class="list" style="--clr: #ffa117">
-        <a>
-          <span class="icon"><i class="ph-user-thin"></i></span>
+        <a routerLink="about">
+          <span class="icon"><i class="ph-user"></i></span>
           <span class="text">About</span>
         </a>
       </li>
 
       <li class="list" style="--clr: #0fc70f">
         <a>
-          <span class="icon"><i class="ph-chat-teardrop-thin"></i></span>
+          <span class="icon"><i class="ph-chat-teardrop"></i></span>
           <span class="text">Message</span>
         </a>
       </li>
 
       <li class="list" style="--clr: #2196f3">
         <a>
-          <span class="icon"><i class="ph-camera-thin"></i></span>
+          <span class="icon"><i class="ph-camera"></i></span>
           <span class="text">Photos</span>
         </a>
       </li>
 
       <li class="list" style="--clr: #b145e9">
         <a>
-          <span class="icon"><i class="ph-gear-six-thin"></i></span>
+          <span class="icon"><i class="ph-gear-six"></i></span>
           <span class="text">Settings</span>
         </a>
       </li>
     </ul>
   </div>
+  <router-outlet></router-outlet>
 </body>
 
-<router-outlet></router-outlet>

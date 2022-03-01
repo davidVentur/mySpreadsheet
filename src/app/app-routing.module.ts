@@ -14,12 +14,12 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'firstApp',
+    redirectTo: '',
   },
   /*
   {
     path: ['RouteFromNewApp'],
-    loadChildren:() => import('[PathFromModuleImport]').then(m => ['NameModule'])
+    loadChildren:() => import('[PathFromModuleImport]').then(m => m.['NameModule'])
   }
   */
 ];
